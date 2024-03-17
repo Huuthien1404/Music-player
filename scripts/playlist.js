@@ -136,7 +136,8 @@ let songs = [
     id: 20,
     name: "Khóa Ly Biệt",
     singer: "Voi Bản Đôn",
-    imgUrl: "./images/khoa-ly-biet-nhac-pham-tai-ca-si-mat-na-gay-sot-1699497795.jpg",
+    imgUrl:
+      "./images/khoa-ly-biet-nhac-pham-tai-ca-si-mat-na-gay-sot-1699497795.jpg",
     songUrl: "./songs/Khoalybiet.m4a",
   },
 ];
@@ -147,7 +148,7 @@ let songsElement = (document.querySelector(".songs").innerHTML = songs.map(
   (song) =>
     `<div class="song">
 <div class="song-image">
-  <img src="${song.imgUrl}" alt="" />
+  <img src="${song.imgUrl}" alt="" loading="lazy"/>
 </div>
 <div class="song-description">
   <h4 class="song-title"><a href="./detail.html?id=${song.id}">${song.name}</a></h4>
