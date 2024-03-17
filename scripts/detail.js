@@ -24,10 +24,12 @@ let repeatOne = document.getElementById("repeat-one-toggle");
 let intervalId;
 
 song.onloadedmetadata = () => {
-  song.play();
+  if (ctrlIcon.classList.contains("fa-pause")) {
+    song.play();
+  } else song.pause();
   songVolume.max = 100;
-  songVolume.value = 2;
-  song.volume = 0.02;
+  songVolume.value = 10;
+  song.volume = 0.1;
   document.querySelector(".song-start").innerHTML = "0:00";
   document.querySelector(".song-end").innerHTML = `${Math.floor(
     song.duration / 60
@@ -190,8 +192,8 @@ ctrlVolume.onclick = () => {
     songVolume.value = 0;
     song.volume = 0;
   } else {
-    songVolume.value = 2;
-    song.volume = 0.02;
+    songVolume.value = 10;
+    song.volume = 0.1;
     ctrlVolume.classList.remove("fa-volume-xmark");
     ctrlVolume.classList.add("fa-volume-low");
   }
