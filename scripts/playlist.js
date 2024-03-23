@@ -140,6 +140,38 @@ let songs = [
       "./images/khoa-ly-biet-nhac-pham-tai-ca-si-mat-na-gay-sot-1699497795.jpg",
     songUrl: "./songs/Khoalybiet.m4a",
   },
+  {
+    id: 21,
+    name: "Âm thầm bên em",
+    singer: "Sơn Tùng M-TP",
+    imgUrl:
+      "./images/amthambenem.jfif",
+    songUrl: "./songs/amthambenem.m4a",
+  },
+  {
+    id: 22,
+    name: "Xin đừng lặng im",
+    singer: "Soobin Hoàng Sơn",
+    imgUrl:
+      "./images/xindunglangim.jfif",
+    songUrl: "./songs/xindunglangim.m4a",
+  },
+  {
+    id: 23,
+    name: "Hư không",
+    singer: "Kha",
+    imgUrl:
+      "./images/hukhong.jfif",
+    songUrl: "./songs/hukhong.m4a",
+  },
+  {
+    id: 24,
+    name: "Phía sau một cô gái",
+    singer: "Soobin Hoàng Sơn",
+    imgUrl:
+      "./images/phiasaumotcogai.jfif",
+    songUrl: "./songs/phiasaumotcogai.m4a",
+  },
 ];
 
 localStorage.setItem("songs", JSON.stringify(songs));
